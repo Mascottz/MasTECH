@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MasTECH Innovations – Hardware Repair &amp; Web Design</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0a0e1a',
+            deepblue: '#0f1629',
+            accent: '#00e5a0',
+            accentDim: '#00b87a',
+            surface: '#151c32',
+            textMain: '#e2e8f0'
+          },
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    .gradient-text { background: linear-gradient(135deg, #00e5a0, #00b4d8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .glow-border { border: 1px solid rgba(0,229,160,0.2); box-shadow: 0 0 20px rgba(0,229,160,0.05); }
+    .hero-bg { background: radial-gradient(ellipse at 30% 20%, rgba(0,229,160,0.08) 0%, transparent 50%), radial-gradient(ellipse at 70% 80%, rgba(0,180,216,0.05) 0%, transparent 50%), #0a0e1a; }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+    .float-anim { animation: float 4s ease-in-out infinite; }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+    .fade-up { animation: fadeUp 0.8s ease forwards; }
+    .fade-up-d1 { animation-delay: 0.1s; opacity:0; }
+    .fade-up-d2 { animation-delay: 0.2s; opacity:0; }
+    .fade-up-d3 { animation-delay: 0.3s; opacity:0; }
+    .fade-up-d4 { animation-delay: 0.4s; opacity:0; }
+    /* Added style for your profile picture */
+    .profile-pic { width: 100%; height: 100%; object-fit: cover; border-radius: 1rem; }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full overflow-auto bg-navy font-outfit text-textMain">
+  <nav class="fixed top-0 left-0 w-full z-50 bg-navy/80 backdrop-blur-md border-b border-white/5">
+   <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <span class="font-bold text-xl gradient-text font-mono">MasTECH</span>
+    <div class="hidden md:flex gap-8 text-sm text-gray-400">
+     <a href="#about" class="hover:text-accent transition">About</a> <a href="#services" class="hover:text-accent transition">Services</a> <a href="#portfolio" class="hover:text-accent transition">Portfolio</a> <a href="#skills" class="hover:text-accent transition">Skills</a> <a href="#contact" class="hover:text-accent transition">Contact</a>
+    </div><a href="#contact" class="bg-accent/10 text-accent border border-accent/30 px-4 py-2 rounded-lg text-sm font-medium hover:bg-accent/20 transition">Hire Me</a>
+   </div>
+  </nav><section class="hero-bg min-h-[100%] flex items-center pt-20">
+   <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+     <p class="text-accent font-mono text-sm mb-4 fade-up">// Computer Engineer &amp; Web Designer</p>
+     <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 fade-up fade-up-d1">Mascott – Hardware Repair Expert &amp; Website Designer in Abuja FCT</h1>
+     <p id="hero-subtitle" class="text-gray-400 text-lg mb-8 leading-relaxed fade-up fade-up-d2">I fix laptops, desktops and tech problems fast + I build clean, responsive websites for small businesses</p>
+     <div class="flex flex-wrap gap-4 fade-up fade-up-d3">
+      <a href="#contact" class="bg-accent text-navy font-semibold px-6 py-3 rounded-lg hover:bg-accentDim transition inline-flex items-center gap-2"><i data-lucide="message-circle" style="width:18px;height:18px"></i> Get a Quote</a> <a href="#contact" class="border border-green-500/30 text-accent px-6 py-3 rounded-lg hover:bg-accent/10 transition inline-flex items-center gap-2"><i data-lucide="phone" style="width:18px;height:18px"></i> WhatsApp</a>
+     </div>
+    </div>
+    <div class="flex justify-center fade-up fade-up-d4">
+     <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl glow-border bg-surface flex items-center justify-center float-anim overflow-hidden">
+      <img src="mascott.png" alt="Mascott Professional Photo" class="profile-pic">
+     </div>
+    </div>
+   </div>
+  </section><section id="about" class="py-20 bg-deepblue">
+   <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-2">About <span class="gradient-text">Me</span></h2>
+    <div class="w-16 h-1 bg-accent rounded mb-8"></div>
+    <p id="about-text" class="text-gray-400 text-lg leading-relaxed">Experienced Computer Hardware Engineer with strong skills in laptop/desktop repairs, troubleshooting, upgrades, virus removal, and modern website design using WordPress and other tools. Helping individuals and businesses in Abuja FCT get reliable tech solutions and strong online presence.</p>
+   </div>
+  </section><section id="services" class="py-20 bg-navy">
+   <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-2 text-center">My <span class="gradient-text">Services</span></h2>
+    <div class="w-16 h-1 bg-accent rounded mb-12 mx-auto"></div>
+    <div class="grid md:grid-cols-2 gap-8">
+     <div class="glow-border rounded-2xl p-8 bg-surface hover:bg-surface/80 transition">
+      <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6"><i data-lucide="globe" style="width:28px;height:28px;color:#00e5a0"></i>
+      </div>
+      <h3 class="text-xl font-semibold mb-4">Website Design &amp; Development</h3>
+      <ul class="text-gray-400 space-y-2 text-sm">
+       <li class="flex items-center gap-2"><i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i> WordPress websites</li>
+       <li class="flex items-center gap-2"><i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i> Landing pages &amp; business sites</li>
+       <li class="flex items-center gap-2"><i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i> Responsive, mobile-friendly design</li>
+       <li class="flex items-center gap-2"><i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i> Website maintenance &amp; updates</li>
+      </ul>
+     </div>
+     <div class="glow-border rounded-2xl p-8 bg-surface hover:bg-surface/80 transition">
+      <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6"><i data-lucide="wrench" style="width:28px;height:28px;color:#00e5a0"></i>
+      </div>
+      <h3 class="text-xl font-semibold mb-4">Computer Hardware Repair &amp; IT Support</h3>
+      <ul class="text-gray-400 space-y-2 text-sm">
+       <li class="flex items-center gap-2"><i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i> Laptop &amp; desktop repairs</li>
+       <li class="flex items-center gap-2"><i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i> Hardware upgrades (RAM, SSD, etc.)</li>
+       <li class="flex items-center gap-2"><i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i> Troubleshooting &amp; virus removal</li>
+       <li class="flex items-center gap-2"><i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i> Onsite IT support in Abuja FCT</li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </section><section id="portfolio" class="py-20 bg-deepblue">
+   <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-2 text-center">Recent <span class="gradient-text">Projects</span></h2>
+    <div class="w-16 h-1 bg-accent rounded mb-12 mx-auto"></div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+    </div>
+   </div>
+  </section><section id="skills" class="py-20 bg-navy">
+   <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-2 text-center">Technical <span class="gradient-text">Skills</span></h2>
+    <div class="w-16 h-1 bg-accent rounded mb-12 mx-auto"></div>
+    <div class="flex flex-wrap justify-center gap-3" id="skills-list"></div>
+   </div>
+  </section><section class="py-20 bg-deepblue">
+   <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-2 text-center">Client <span class="gradient-text">Reviews</span></h2>
+    <div class="w-16 h-1 bg-accent rounded mb-12 mx-auto"></div>
+    <div class="grid md:grid-cols-2 gap-6">
+     <div class="glow-border rounded-xl p-6 bg-surface">
+      <div class="flex gap-1 mb-3"><i data-lucide="star" style="width:16px;height:16px;color:#00e5a0"></i><i data-lucide="star" style="width:16px;height:16px;color:#00e5a0"></i><i data-lucide="star" style="width:16px;height:16px;color:#00e5a0"></i><i data-lucide="star" style="width:16px;height:16px;color:#00e5a0"></i><i data-lucide="star" style="width:16px;height:16px;color:#00e5a0"></i>
+      </div>
+      <p class="text-gray-400 text-sm mb-4">"Akintokun fixed my laptop the same day. Very professional and honest. Highly recommend!"</p>
+      <p class="text-accent text-sm font-medium">— Chidi O., Abuja FCT</p>
+     </div>
+     <div class="glow-border rounded-xl p-6 bg-surface">
+      <div class="flex gap-1 mb-3"><i data-lucide="star" style="width:16px;height:16px;color:#00e5a0"></i><i data-lucide="star" style="width:16px;height:16px;color:#00e5a0"></i><i data-lucide="star" style="width:16px;height:16px;color:#00e5a0"></i><i data-lucide="star" style="width:16px;height:16px;color:#00e5a0"></i><i data-lucide="star" style="width:16px;height:16px;color:#00e5a0"></i>
+      </div>
+      <p class="text-gray-400 text-sm mb-4">"He built a beautiful website for my boutique. Fast delivery and great communication throughout."</p>
+      <p class="text-accent text-sm font-medium">— Funke A., Abuja FCT</p>
+     </div>
+    </div>
+   </div>
+  </section><section id="contact" class="py-20 bg-navy">
+   <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-2">Let's <span class="gradient-text">Work Together</span></h2>
+    <div class="w-16 h-1 bg-accent rounded mb-8 mx-auto"></div>
+    <p class="text-gray-400 mb-10">Available for freelance projects locally and internationally</p>
+    <div class="grid sm:grid-cols-3 gap-6 mb-10">
+     <div class="glow-border rounded-xl p-6 bg-surface">
+      <i data-lucide="message-circle" style="width:28px;height:28px;color:#00e5a0" class="mx-auto mb-3"></i>
+      <p class="text-sm text-gray-400">WhatsApp</p>
+      <p id="contact-whatsapp" class="text-accent font-medium text-sm">+234 xxx xxx xxxx</p>
+     </div>
+     <div class="glow-border rounded-xl p-6 bg-surface">
+      <i data-lucide="mail" style="width:28px;height:28px;color:#00e5a0" class="mx-auto mb-3"></i>
+      <p class="text-sm text-gray-400">Email</p>
+      <p id="contact-email" class="text-accent font-medium text-sm">hello@akintokun.com</p>
+     </div>
+     <div class="glow-border rounded-xl p-6 bg-surface">
+      <i data-lucide="map-pin" style="width:28px;height:28px;color:#00e5a0" class="mx-auto mb-3"></i>
+      <p class="text-sm text-gray-400">Location</p>
+      <p class="text-accent font-medium text-sm">Abuja FCT</p>
+     </div>
+    </div><a href="#" class="inline-flex items-center gap-2 bg-accent text-navy font-semibold px-8 py-4 rounded-lg hover:bg-accentDim transition text-lg"><i data-lucide="send" style="width:20px;height:20px"></i> Send a Message</a>
+   </div>
+  </section><footer class="py-8 bg-deepblue border-t border-white/5">
+   <div class="max-w-6xl mx-auto px-6 text-center text-gray-500 text-sm">
+    <p>© 2026 MasTECH Innovations. All rights reserved. Built with passion in Abuja, Nigeria.</p>
+   </div>
+  </footer>
+  <script>
+    const defaultConfig = {
+      hero_title: "Mascott – Hardware Repair Expert & Website Designer in Abuja FCT",
+      hero_subtitle: "I fix laptops, desktops and tech problems fast + I build clean, responsive websites for small businesses",
+      about_text: "Experienced Computer Hardware Engineer with strong skills in laptop/desktop repairs, troubleshooting, upgrades, virus removal, and modern website design using WordPress and other tools. Helping individuals and businesses in Abuja FCT get reliable tech solutions and strong online presence.",
+      whatsapp_number: "+2349138825300 ",
+      email_address: "Mastechltd0@gmail.com",
+      background_color: "#0a0e1a",
+      surface_color: "#151c32",
+      text_color: "#e2e8f0",
+      accent_color: "#00e5a0",
+      secondary_action_color: "#94a3b8",
+      font_family: "Outfit",
+      font_size: 16
+    };
+
+    const projects = [
+      { title: "Abuja Restaurant Website", desc: "Modern responsive site for a local restaurant with online menu and reservations.", icon: "utensils" },
+      { title: "Fashion Boutique Landing Page", desc: "Stylish landing page showcasing latest collections with mobile-first design.", icon: "shirt" },
+      { title: "Computer Repair Shop Website", desc: "Professional site with service listings, pricing, and booking system.", icon: "monitor" },
+      { title: "Small Business Portfolio", desc: "Clean portfolio site helping a startup showcase their work and attract clients.", icon: "briefcase" },
+      { title: "Church Informational Website", desc: "Community-focused site with events calendar and sermon archives.", icon: "heart" }
+    ];
+
+    const skills = ["Hardware Repair", "Troubleshooting", "WordPress", "Responsive Design", "IT Support", "Virus Removal", "Basic Networking", "Canva & Design Tools", "Windows OS", "Data Recovery"];
+
+    function renderPortfolio() {
+      const grid = document.getElementById('portfolio-grid');
+      grid.innerHTML = projects.map(p => `
+        <div class="glow-border rounded-xl overflow-hidden bg-surface group hover:border-accent/40 transition">
+          <div class="h-40 bg-navy/50 flex items-center justify-center">
+            <i data-lucide="${p.icon}" style="width:40px;height:40px;color:#00e5a0" class="opacity-50 group-hover:opacity-100 transition"></i>
+          </div>
+          <div class="p-5">
+            <h4 class="font-semibold mb-2">${p.title}</h4>
+            <p class="text-gray-400 text-sm mb-4">${p.desc}</p>
+            <button class="text-accent text-sm font-medium hover:underline inline-flex items-center gap-1"><i data-lucide="external-link" style="width:14px;height:14px"></i> View Project</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderSkills() {
+      const list = document.getElementById('skills-list');
+      list.innerHTML = skills.map(s => `<span class="px-4 py-2 rounded-lg bg-surface glow-border text-sm text-gray-300 hover:text-accent hover:border-accent/40 transition cursor-default">${s}</span>`).join('');
+    }
+
+    function applyConfig(config) {
+      document.getElementById('hero-title').textContent = config.hero_title || defaultConfig.hero_title;
+      document.getElementById('hero-subtitle').textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+      document.getElementById('about-text').textContent = config.about_text || defaultConfig.about_text;
+      document.getElementById('contact-whatsapp').textContent = config.whatsapp_number || defaultConfig.whatsapp_number;
+      document.getElementById('contact-email').textContent = config.email_address || defaultConfig.email_address;
+
+      const font = config.font_family || defaultConfig.font_family;
+      document.body.style.fontFamily = `${font}, Outfit, sans-serif`;
+
+      const size = config.font_size || defaultConfig.font_size;
+      document.getElementById('hero-title').style.fontSize = `${size * 2.8}px`;
+      document.getElementById('hero-subtitle').style.fontSize = `${size * 1.1}px`;
+      document.getElementById('about-text').style.fontSize = `${size * 1.1}px`;
+
+      // Colors
+      const bg = config.background_color || defaultConfig.background_color;
+      const surface = config.surface_color || defaultConfig.surface_color;
+      const text = config.text_color || defaultConfig.text_color;
+      const accent = config.accent_color || defaultConfig.accent_color;
+
+      document.documentElement.style.setProperty('--bg', bg);
+      document.body.style.color = text;
+    }
+
+    renderPortfolio();
+    renderSkills();
+
+    window.elementSdk.init({
+      defaultConfig,
+      onConfigChange: async (config) => { applyConfig(config); lucide.createIcons(); },
+      mapToCapabilities: (config) => ({
+        recolorables: [
+          { get: () => config.background_color || defaultConfig.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
+          { get: () => config.surface_color || defaultConfig.surface_color, set: (v) => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
+          { get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
+          { get: () => config.accent_color || defaultConfig.accent_color, set: (v) => { config.accent_color = v; window.elementSdk.setConfig({ accent_color: v }); } },
+          { get: () => config.secondary_action_color || defaultConfig.secondary_action_color, set: (v) => { config.secondary_action_color = v; window.elementSdk.setConfig({ secondary_action_color: v }); } }
+        ],
+        borderables: [],
+        fontEditable: { get: () => config.font_family || defaultConfig.font_family, set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); } },
+        fontSizeable: { get: () => config.font_size || defaultConfig.font_size, set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); } }
+      }),
+      mapToEditPanelValues: (config) => new Map([
+        ["hero_title", config.hero_title || defaultConfig.hero_title],
+        ["hero_subtitle", config.hero_subtitle || defaultConfig.hero_subtitle],
+        ["about_text", config.about_text || defaultConfig.about_text],
+        ["whatsapp_number", config.whatsapp_number || defaultConfig.whatsapp_number],
+        ["email_address", config.email_address || defaultConfig.email_address]
+      ])
+    });
+
+    applyConfig(defaultConfig);
+    lucide.createIcons();
+  </script>
+</body>
+</html>
