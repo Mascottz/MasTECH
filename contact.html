@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – MasTECH Innovations</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: '#0a0e1a',
+              deepblue: '#0f1629',
+              accent: '#00e5a0',
+              accentDim: '#00b87a',
+              surface: '#151c32',
+              textMain: '#e2e8f0'
+            },
+            fontFamily: {
+              outfit: ['Outfit', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace']
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="min-h-screen bg-navy text-textMain font-outfit">
+    <nav class="bg-navy/90 border-b border-white/5 backdrop-blur-md">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="font-bold text-xl gradient-text font-mono">MasTECH</a>
+        <div class="hidden md:flex gap-8 text-sm text-gray-400">
+          <a href="about.html" class="hover:text-accent transition">About</a>
+          <a href="services.html" class="hover:text-accent transition">Services</a>
+          <a href="portfolio.html" class="hover:text-accent transition">Portfolio</a>
+          <a href="contact.html" class="text-accent">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 md:py-16 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">Let’s Work Together</h1>
+      <div class="w-16 h-1 bg-accent rounded mb-8 mx-auto"></div>
+      <p class="text-gray-400 mb-10">
+        Available for freelance projects in Abuja and remote work worldwide. If you need reliable laptop/desktop repairs or a clean website for your business, send a quick message.
+      </p>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-10">
+        <div class="border border-white/10 rounded-xl p-6 bg-surface">
+          <i data-lucide="message-circle" style="width:28px;height:28px;color:#00e5a0" class="mx-auto mb-3"></i>
+          <p class="text-sm text-gray-400">WhatsApp</p>
+          <p class="text-accent font-medium text-sm">+234 913 882 5300</p>
+        </div>
+        <div class="border border-white/10 rounded-xl p-6 bg-surface">
+          <i data-lucide="mail" style="width:28px;height:28px;color:#00e5a0" class="mx-auto mb-3"></i>
+          <p class="text-sm text-gray-400">Email</p>
+          <p class="text-accent font-medium text-sm">mastechltd0@gmail.com</p>
+        </div>
+        <div class="border border-white/10 rounded-xl p-6 bg-surface">
+          <i data-lucide="map-pin" style="width:28px;height:28px;color:#00e5a0" class="mx-auto mb-3"></i>
+          <p class="text-sm text-gray-400">Location</p>
+          <p class="text-accent font-medium text-sm">Abuja FCT</p>
+        </div>
+      </div>
+
+      <a href="https://wa.me/2349138825300" target="_blank"
+         class="inline-flex items-center gap-2 bg-accent text-navy font-semibold px-8 py-4 rounded-lg hover:bg-accentDim transition text-lg">
+        <i data-lucide="send" style="width:20px;height:20px"></i> Send a WhatsApp Message
+      </a>
+    </main>
+  </body>
+</html>
