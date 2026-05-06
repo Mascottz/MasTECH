@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services – MasTECH Innovations</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: '#0a0e1a',
+              deepblue: '#0f1629',
+              accent: '#00e5a0',
+              accentDim: '#00b87a',
+              surface: '#151c32',
+              textMain: '#e2e8f0'
+            },
+            fontFamily: {
+              outfit: ['Outfit', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace']
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="min-h-screen bg-navy text-textMain font-outfit">
+    <nav class="bg-navy/90 border-b border-white/5 backdrop-blur-md">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="font-bold text-xl gradient-text font-mono">MasTECH</a>
+        <div class="hidden md:flex gap-8 text-sm text-gray-400">
+          <a href="about.html" class="hover:text-accent transition">About</a>
+          <a href="services.html" class="text-accent">Services</a>
+          <a href="portfolio.html" class="hover:text-accent transition">Portfolio</a>
+          <a href="contact.html" class="hover:text-accent transition">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 md:py-16">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">Services</h1>
+      <div class="w-16 h-1 bg-accent rounded mb-8"></div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <section class="border border-white/10 rounded-2xl p-6 bg-surface">
+          <div class="flex items-center gap-3 mb-4">
+            <i data-lucide="globe" style="width:24px;height:24px;color:#00e5a0"></i>
+            <h2 class="text-xl font-semibold">Website Design & Development</h2>
+          </div>
+          <ul class="text-gray-300 text-sm space-y-2">
+            <li>Business websites, personal portfolios and landing pages.</li>
+            <li>Mobile‑first, responsive layouts that look good on phone and laptop.</li>
+            <li>WordPress setup, customization and simple e‑commerce integration.</li>
+            <li>Connection to WhatsApp and contact forms to capture leads.</li>
+          </ul>
+        </section>
+
+        <section class="border border-white/10 rounded-2xl p-6 bg-surface">
+          <div class="flex items-center gap-3 mb-4">
+            <i data-lucide="wrench" style="width:24px;height:24px;color:#00e5a0"></i>
+            <h2 class="text-xl font-semibold">Hardware Repair & IT Support</h2>
+          </div>
+          <ul class="text-gray-300 text-sm space-y-2">
+            <li>Laptop & desktop fault diagnosis (no power, no display, overheating, slow performance).</li>
+            <li>Hardware upgrades: RAM, SSD, hard drive cloning, battery & keyboard replacement.</li>
+            <li>Virus/malware removal, OS installation and performance tuning.</li>
+            <li>Onsite support within Abuja FCT for homes and small offices.</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
