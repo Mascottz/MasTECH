@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – MasTECH Innovations</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    //fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: '#0a0e1a',
+              deepblue: '#0f1629',
+              accent: '#00e5a0',
+              accentDim: '#00b87a',
+              surface: '#151c32',
+              textMain: '#e2e8f0'
+            },
+            fontFamily: {
+              outfit: ['Outfit', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace']
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .gradient-text { background: linear-gradient(135deg, #00e5a0, #00b4d8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    </style>
+  </head>
+  <body class="min-h-screen bg-deepblue text-textMain font-outfit">
+    <!-- NAV -->
+    <nav class="bg-navy/90 border-b border-white/5 backdrop-blur-md">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="font-bold text-xl gradient-text font-mono">MasTECH</a>
+        <div class="hidden md:flex gap-8 text-sm text-gray-400">
+          <a href="about.html" class="hover:text-accent transition">About</a>
+          <a href="services.html" class="hover:text-accent transition">Services</a>
+          <a href="portfolio.html" class="text-accent">Portfolio</a>
+          <a href="contact.html" class="hover:text-accent transition">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="max-w-6xl mx-auto px-6 py-12 md:py-16">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">Sample Projects</h1>
+      <div class="w-16 h-1 bg-accent rounded mb-8"></div>
+      <p class="text-gray-400 text-lg mb-10">
+        I’m rebuilding my portfolio with fresh demo and client projects. These examples show the style and structure I can deliver for businesses in Abuja and beyond.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Real Estate demo -->
+        <article class="border border-white/10 rounded-2xl p-6 bg-surface">
+          <p class="text-xs text-accent mb-2 font-mono">// Demo Layout</p>
+          <h2 class="font-semibold mb-2">Real Estate Agent Website</h2>
+          <p class="text-gray-400 text-sm mb-3">
+            Modern one‑page design for Abuja real estate agents with featured homes, key property details and a strong WhatsApp call‑to‑action for inspections.
+          </p>
+          <p class="text-xs text-gray-500 mb-2">
+            Built with HTML, Tailwind CSS and simple JavaScript.
+          </p>
+          <a href="https://mascottz.github.io/abuja-homes-realty/" target="_blank"
+             class="text-xs text-accent hover:text-accentDim inline-flex items-center gap-1 mt-2">
+            <i data-lucide="external-link" style="width:14px;height:14px"></i>
+            View live demo
+          </a>
+        </article>
+
+        <!-- Restaurant demo -->
+        <article class="border border-white/10 rounded-2xl p-6 bg-surface">
+          <p class="text-xs text-accent mb-2 font-mono">// Demo Layout</p>
+          <h2 class="font-semibold mb-2">Restaurant / Food Spot Website</h2>
+          <p class="text-gray-400 text-sm mb-3">
+            Full‑width hero image, menu sections, gallery and visit/contact details showing how a small restaurant in Abuja can present its food and opening hours online.
+          </p>
+          <p class="text-xs text-gray-500 mb-2">
+            Built with HTML and Tailwind CSS, optimized for mobile users.
+          </p>
+          <a href="https://mascottz.github.io/taste-corner-restaurant/" target="_blank"
+             class="text-xs text-accent hover:text-accentDim inline-flex items-center gap-1 mt-2">
+            <i data-lucide="external-link" style="width:14px;height:14px"></i>
+            View live demo
+          </a>
+        </article>
+
+        <!-- Generic service landing -->
+        <article class="border border-white/10 rounded-2xl p-6 bg-surface">
+          <p class="text-xs text-accent mb-2 font-mono">// Demo Layout</p>
+          <h2 class="font-semibold mb-2">Service Business Landing Page</h2>
+          <p class="text-gray-400 text-sm mb-3">
+            Generic landing page concept for any service business: hero, list of services, short about section, testimonials and a contact block that pushes visitors to WhatsApp or call.
+          </p>
+          <p class="text-xs text-gray-500">
+            Built with HTML, CSS and subtle animations for a professional feel.
+          </p>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
