@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MasTECH Innovations – Hardware Repair &amp; Web Design</title>
+    <title>MasTECH Innovations – Hardware Repair & Web Design</title>
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
@@ -30,56 +30,38 @@
     <style>
       html, body { height: 100%; margin: 0; }
       .gradient-text { background: linear-gradient(135deg, #00e5a0, #00b4d8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-      .glow-border { border: 1px solid rgba(0,229,160,0.2); box-shadow: 0 0 20px rgba(0,229,160,0.05); }
       .hero-bg { background: radial-gradient(ellipse at 30% 20%, rgba(0,229,160,0.08) 0%, transparent 50%), radial-gradient(ellipse at 70% 80%, rgba(0,180,216,0.05) 0%, transparent 50%), #0a0e1a; }
-      @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
-      .float-anim { animation: float 4s ease-in-out infinite; }
-      @keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
-      .fade-up { animation: fadeUp 0.8s ease forwards; }
-      .profile-pic { width: 100%; height: 100%; object-fit: cover; border-radius: 1rem; }
+      .glow-border { border: 1px solid rgba(0,229,160,0.2); box-shadow: 0 0 20px rgba(0,229,160,0.05); }
     </style>
   </head>
-  <body class="h-full overflow-auto bg-navy font-outfit text-textMain">
-    <!-- NAVBAR -->
+  <body class="h-full bg-navy font-outfit text-textMain">
+    <!-- NAV -->
     <nav class="fixed top-0 left-0 w-full z-50 bg-navy/80 backdrop-blur-md border-b border-white/5">
       <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <!-- Logo -->
-        <span class="font-bold text-xl gradient-text font-mono">MasTECH</span>
-
-        <!-- Desktop menu -->
+        <a href="index.html" class="font-bold text-xl gradient-text font-mono">MasTECH</a>
         <div class="hidden md:flex gap-8 text-sm text-gray-400">
-          <a href="#about" class="hover:text-accent transition">About</a>
-          <a href="#services" class="hover:text-accent transition">Services</a>
-          <a href="#portfolio" class="hover:text-accent transition">Portfolio</a>
-          <a href="#skills" class="hover:text-accent transition">Skills</a>
-          <a href="#testimonials" class="hover:text-accent transition">Testimonials</a>
-          <a href="#contact" class="hover:text-accent transition">Contact</a>
+          <a href="about.html" class="hover:text-accent transition">About</a>
+          <a href="services.html" class="hover:text-accent transition">Services</a>
+          <a href="portfolio.html" class="hover:text-accent transition">Portfolio</a>
+          <a href="contact.html" class="hover:text-accent transition">Contact</a>
         </div>
-
-        <!-- Desktop CTA -->
         <div class="hidden md:block">
-          <a href="https://wa.me/2349138825300" target="_blank"
+          <a href="contact.html"
              class="bg-accent/10 text-accent border border-accent/30 px-4 py-2 rounded-lg text-sm font-medium hover:bg-accent/20 transition">
             Hire Me
           </a>
         </div>
-
-        <!-- Mobile hamburger button -->
         <button id="mobile-menu-toggle" class="md:hidden text-gray-300 hover:text-accent">
           <i data-lucide="menu" style="width:24px;height:24px"></i>
         </button>
       </div>
-
-      <!-- Mobile menu -->
       <div id="mobile-menu" class="md:hidden hidden border-t border-white/5 bg-navy">
         <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-4 text-sm text-gray-300">
-          <a href="#about" class="hover:text-accent transition">About</a>
-          <a href="#services" class="hover:text-accent transition">Services</a>
-          <a href="#portfolio" class="hover:text-accent transition">Portfolio</a>
-          <a href="#skills" class="hover:text-accent transition">Skills</a>
-          <a href="#testimonials" class="hover:text-accent transition">Testimonials</a>
-          <a href="#contact" class="hover:text-accent transition">Contact</a>
-          <a href="https://wa.me/2349138825300" target="_blank"
+          <a href="about.html" class="hover:text-accent transition">About</a>
+          <a href="services.html" class="hover:text-accent transition">Services</a>
+          <a href="portfolio.html" class="hover:text-accent transition">Portfolio</a>
+          <a href="contact.html" class="hover:text-accent transition">Contact</a>
+          <a href="contact.html"
              class="mt-2 bg-accent/10 text-accent border border-accent/30 px-4 py-2 rounded-lg text-sm font-medium hover:bg-accent/20 transition">
             Hire Me
           </a>
@@ -88,279 +70,53 @@
     </nav>
 
     <!-- HERO -->
-    <section class="hero-bg min-h-[100%] flex items-center pt-20">
+    <section class="hero-bg min-h-screen flex items-center pt-20">
       <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <p class="text-accent font-mono text-sm mb-4 fade-up">// Computer Engineer &amp; Web Designer</p>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 fade-up">
-            Mascott – Hardware Repair Expert &amp; Website Designer in Abuja FCT
+          <p class="text-accent font-mono text-sm mb-4">// Computer Engineer & Web Designer</p>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            Mascott – Hardware Repair Expert & Website Designer in Abuja FCT
           </h1>
-          <p class="text-gray-400 text-lg mb-8 leading-relaxed fade-up">
+          <p class="text-gray-400 text-lg mb-8 leading-relaxed">
             I repair laptops and desktops quickly and professionally, and I build clean, responsive websites that make small businesses in Abuja look trustworthy and ready for clients.
           </p>
-          <div class="flex flex-wrap gap-4 fade-up">
-            <a href="https://wa.me/2349138825300" target="_blank"
+          <div class="flex flex-wrap gap-4">
+            <a href="services.html"
                class="bg-accent text-navy font-semibold px-6 py-3 rounded-lg hover:bg-accentDim transition inline-flex items-center gap-2">
-              <i data-lucide="message-circle" style="width:18px;height:18px"></i> Get a Quote
+              <i data-lucide="wrench" style="width:18px;height:18px"></i>
+              View My Services
             </a>
-            <a href="https://wa.me/2349138825300" target="_blank"
+            <a href="portfolio.html"
                class="border border-green-500/30 text-accent px-6 py-3 rounded-lg hover:bg-accent/10 transition inline-flex items-center gap-2">
-              <i data-lucide="phone" style="width:18px;height:18px"></i> WhatsApp
+              <i data-lucide="globe" style="width:18px;height:18px"></i>
+              See Sample Projects
             </a>
           </div>
         </div>
-        <div class="flex justify-center fade-up">
-          <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl glow-border bg-surface flex items-center justify-center float-anim overflow-hidden">
-            <img src="mascott.jpg" alt="Mascott Professional Photo" class="profile-pic"
+        <div class="flex justify-center">
+          <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl glow-border bg-surface flex items-center justify-center overflow-hidden">
+            <img src="mascott.jpg" alt="Mascott Professional Photo"
+                 class="w-full h-full object-cover"
                  onerror="this.src='https://via.placeholder.com/400x400/151c32/00e5a0?text=Mascott'">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="py-20 bg-deepblue">
-      <div class="max-w-4xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-2">About <span class="gradient-text">Me</span></h2>
-        <div class="w-16 h-1 bg-accent rounded mb-8"></div>
-        <p class="text-gray-400 text-lg leading-relaxed">
-          I’m a Computer Hardware Engineer and Web Developer helping individuals and small businesses in Abuja fix their tech and grow online. I handle laptop and desktop repairs, upgrades, virus removal, data backup, and full system optimization. On the web side, I design and build modern, mobile‑friendly websites using HTML, CSS, JavaScript (with React), Node.js/Express, PHP and WordPress – so your brand looks professional and your customers can reach you easily. I’m currently rebuilding my portfolio from scratch with fresh demo and client projects.
-        </p>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" class="py-20 bg-navy">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-2 text-center">My <span class="gradient-text">Services</span></h2>
-        <div class="w-16 h-1 bg-accent rounded mb-12 mx-auto"></div>
-        <div class="grid md:grid-cols-2 gap-8">
-          <!-- Web Design -->
-          <div class="glow-border rounded-2xl p-8 bg-surface hover:bg-surface/80 transition">
-            <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
-              <i data-lucide="globe" style="width:28px;height:28px;color:#00e5a0"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-4">Website Design &amp; Development</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i>
-                Business websites, portfolios and landing pages
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i>
-                Fast, responsive design that looks good on phone and laptop
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i>
-                WordPress, custom code (HTML/CSS/JS) and simple e‑commerce setups
-              </li>
-            </ul>
-          </div>
-
-          <!-- Hardware & IT -->
-          <div class="glow-border rounded-2xl p-8 bg-surface hover:bg-surface/80 transition">
-            <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
-              <i data-lucide="wrench" style="width:28px;height:28px;color:#00e5a0"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-4">Hardware Repair &amp; IT Support</h3>
-            <ul class="text-gray-400 space-y-2 text-sm">
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i>
-                Laptop &amp; desktop repairs (no power, no display, overheating, slow systems)
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i>
-                Hardware upgrades: RAM, SSD, HDD cloning, battery &amp; keyboard replacement
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" style="width:16px;height:16px;color:#00e5a0"></i>
-                Onsite IT support and general troubleshooting within Abuja FCT
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="py-20 bg-deepblue">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-2">Sample <span class="gradient-text">Projects</span></h2>
-        <div class="w-16 h-1 bg-accent rounded mb-8"></div>
-        <p class="text-gray-400 text-lg mb-10">
-          I lost access to some of my older client websites, so I’m rebuilding my portfolio with new demo and client projects. These samples show the kind of work I can do for your business.
-        </p>
-
-        <div class="grid md:grid-cols-3 gap-6">
-          <!-- Real Estate demo -->
-          <div class="glow-border rounded-2xl p-6 bg-surface">
-            <p class="text-xs text-accent mb-2 font-mono">// Sample Layout</p>
-            <h3 class="font-semibold mb-2">Real Estate Agent Website</h3>
-            <p class="text-gray-400 text-sm mb-3">
-              Modern one‑page website concept for a real estate agent in Abuja: featured properties, quick filters (rent/sale, location, price range), agent profile and a WhatsApp call‑to‑action for bookings and inspections.
-            </p>
-            <p class="text-xs text-gray-500 mb-2">
-              Built with HTML, Tailwind CSS and basic JavaScript for smooth scrolling and section highlights.
-            </p>
-            <a href="https://mascottz.github.io/abuja-homes-realty/" target="_blank"
-               class="text-xs text-accent hover:text-accentDim inline-flex items-center gap-1 mt-2">
-              <i data-lucide="external-link" style="width:14px;height:14px"></i>
-              View live demo
-            </a>
-          </div>
-
-          <!-- Restaurant demo -->
-          <div class="glow-border rounded-2xl p-6 bg-surface">
-            <p class="text-xs text-accent mb-2 font-mono">// Sample Layout</p>
-            <h3 class="font-semibold mb-2">Small Restaurant / Food Spot</h3>
-            <p class="text-gray-400 text-sm mb-3">
-              Clean website layout for a local restaurant: menu sections, daily specials, opening hours, Google Maps location and buttons for phone call or WhatsApp orders and reservations.
-            </p>
-            <p class="text-xs text-gray-500 mb-2">
-              Built with WordPress and a customized lightweight theme, optimized for mobile customers.
-            </p>
-            <a href="https://mascottz.github.io/taste-corner-restaurant/" target="_blank"
-               class="text-xs text-accent hover:text-accentDim inline-flex items-center gap-1 mt-2">
-              <i data-lucide="external-link" style="width:14px;height:14px"></i>
-              View live demo
-            </a>
-          </div>
-
-          <!-- Generic service business -->
-          <div class="glow-border rounded-2xl p-6 bg-surface">
-            <p class="text-xs text-accent mb-2 font-mono">// Sample Layout</p>
-            <h3 class="font-semibold mb-2">Service Business Landing Page</h3>
-            <p class="text-gray-400 text-sm mb-3">
-              General landing page structure for service businesses in Abuja – hero section, clear list of services, about, simple testimonials and a strong WhatsApp/contact section at the bottom for quick enquiries.
-            </p>
-            <p class="text-xs text-gray-500">
-              Built with HTML, CSS and simple animations for a smooth, professional feel.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="py-20 bg-navy">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-2">My <span class="gradient-text">Skills</span></h2>
-        <div class="w-16 h-1 bg-accent rounded mb-8"></div>
-
-        <div class="grid md:grid-cols-3 gap-6">
-          <!-- Hardware & Repair -->
-          <div class="glow-border rounded-2xl p-6 bg-surface">
-            <h3 class="font-semibold mb-3">Hardware &amp; Repairs</h3>
-            <ul class="text-gray-400 text-sm space-y-1">
-              <li>Laptop &amp; desktop fault diagnosis</li>
-              <li>Motherboard and component-level troubleshooting</li>
-              <li>RAM &amp; SSD upgrades, OS installs and optimization</li>
-              <li>Virus/malware removal and data backup</li>
-            </ul>
-          </div>
-
-          <!-- Web Development -->
-          <div class="glow-border rounded-2xl p-6 bg-surface">
-            <h3 class="font-semibold mb-3">Web Design &amp; Development</h3>
-            <ul class="text-gray-400 text-sm space-y-1">
-              <li>HTML, CSS, JavaScript (and React basics)</li>
-              <li>Node.js/Express and PHP for backend logic</li>
-              <li>WordPress setup, customization and speed tweaks</li>
-              <li>Responsive, mobile‑first design philosophy</li>
-            </ul>
-          </div>
-
-          <!-- IT & Client Experience -->
-          <div class="glow-border rounded-2xl p-6 bg-surface">
-            <h3 class="font-semibold mb-3">IT &amp; Client Experience</h3>
-            <ul class="text-gray-400 text-sm space-y-1">
-              <li>Clear communication and simple explanations</li>
-              <li>Remote and onsite support within Abuja FCT</li>
-              <li>Attention to data safety and backups</li>
-              <li>Brand‑aware design that supports business goals</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" class="py-20 bg-deepblue">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-2">Client <span class="gradient-text">Feedback</span></h2>
-        <div class="w-16 h-1 bg-accent rounded mb-8"></div>
-        <p class="text-gray-400 text-lg mb-10">
-          A few words from people I’ve worked with. I focus on clear communication, honest advice and fast, reliable work.
-        </p>
-
-        <div class="grid md:grid-cols-3 gap-6">
-          <!-- Testimonial 1 -->
-          <div class="glow-border rounded-2xl p-6 bg-surface">
-            <div class="flex items-center gap-2 mb-3">
-              <i data-lucide="quote" style="width:18px;height:18px;color:#00e5a0"></i>
-              <p class="text-xs text-gray-500 uppercase tracking-wide">Laptop Repair</p>
-            </div>
-            <p class="text-gray-300 text-sm mb-4">
-              “My laptop refused to power on and I thought it was gone. Mascott diagnosed it, fixed the issue and even made it faster than before.”
-            </p>
-            <p class="text-xs text-gray-500">— Local client in Abuja</p>
-          </div>
-
-          <!-- Testimonial 2 -->
-          <div class="glow-border rounded-2xl p-6 bg-surface">
-            <div class="flex items-center gap-2 mb-3">
-              <i data-lucide="quote" style="width:18px;height:18px;color:#00e5a0"></i>
-              <p class="text-xs text-gray-500 uppercase tracking-wide">Business Website</p>
-            </div>
-            <p class="text-gray-300 text-sm mb-4">
-              “He built a simple, professional website for my small business and connected it to WhatsApp. Now customers reach out easily from Google and social media.”
-            </p>
-            <p class="text-xs text-gray-500">— Small business owner</p>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div class="glow-border rounded-2xl p-6 bg-surface">
-            <div class="flex items-center gap-2 mb-3">
-              <i data-lucide="quote" style="width:18px;height:18px;color:#00e5a0"></i>
-              <p class="text-xs text-gray-500 uppercase tracking-wide">IT Support</p>
-            </div>
-            <p class="text-gray-300 text-sm mb-4">
-              “Very patient and professional. He explained the issues in simple terms and made sure everything was working before leaving.”
-            </p>
-            <p class="text-xs text-gray-500">— Home &amp; office support client</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="py-20 bg-navy">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-2">Let's <span class="gradient-text">Work Together</span></h2>
-        <div class="w-16 h-1 bg-accent rounded mb-8 mx-auto"></div>
-        <p class="text-gray-400 mb-10">
-          Available for freelance projects in Abuja and remote work worldwide. If you need a reliable technician or a clean website for your business, send a quick message and let’s talk about your project.
-        </p>
-        <div class="grid sm:grid-cols-3 gap-6 mb-10">
-          <div class="glow-border rounded-xl p-6 bg-surface">
-            <i data-lucide="message-circle" style="width:28px;height:28px;color:#00e5a0" class="mx-auto mb-3"></i>
-            <p class="text-sm text-gray-400">WhatsApp</p>
-            <p class="text-accent font-medium text-sm">+234 913 882 5300</p>
-          </div>
-          <div class="glow-border rounded-xl p-6 bg-surface">
-            <i data-lucide="mail" style="width:28px;height:28px;color:#00e5a0" class="mx-auto mb-3"></i>
-            <p class="text-sm text-gray-400">Email</p>
-            <p class="text-accent font-medium text-sm">mastechltd0@gmail.com</p>
-          </div>
-          <div class="glow-border rounded-xl p-6 bg-surface">
-            <i data-lucide="map-pin" style="width:28px;height:28px;color:#00e5a0" class="mx-auto mb-3"></i>
-            <p class="text-sm text-gray-400">Location</p>
-            <p class="text-accent font-medium text-sm">Abuja FCT</p>
-          </div>
-        </div>
-        <a href="https://wa.me/2349138825300" target="_blank"
-           class="inline-flex items-center gap-2 bg-accent text-navy font-semibold px-8 py-4 rounded-lg hover:bg-accentDim transition text-lg">
-          <i data-lucide="send" style="width:20px;height:20px"></i> Send a Message
+    <!-- QUICK LINKS -->
+    <section class="py-16 bg-deepblue">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+        <a href="about.html" class="glow-border rounded-2xl p-6 bg-surface hover:bg-surface/80 transition block">
+          <h3 class="font-semibold mb-2">About Me</h3>
+          <p class="text-gray-400 text-sm">Background, experience and how I help clients in Abuja with IT support and web design.</p>
+        </a>
+        <a href="services.html" class="glow-border rounded-2xl p-6 bg-surface hover:bg-surface/80 transition block">
+          <h3 class="font-semibold mb-2">Services</h3>
+          <p class="text-gray-400 text-sm">Laptop/desktop repairs, upgrades, website design, WordPress and basic e‑commerce.</p>
+        </a>
+        <a href="portfolio.html" class="glow-border rounded-2xl p-6 bg-surface hover:bg-surface/80 transition block">
+          <h3 class="font-semibold mb-2">Portfolio & Demos</h3>
+          <p class="text-gray-400 text-sm">Live real estate and restaurant demo sites you can open and test.</p>
         </a>
       </div>
     </section>
@@ -372,12 +128,8 @@
       </div>
     </footer>
 
-    <!-- SCRIPTS -->
     <script>
-      // Initialize Lucide icons
       lucide.createIcons();
-
-      // Mobile menu toggle
       const toggleBtn = document.getElementById('mobile-menu-toggle');
       const mobileMenu = document.getElementById('mobile-menu');
 
@@ -385,12 +137,8 @@
         toggleBtn.addEventListener('click', () => {
           mobileMenu.classList.toggle('hidden');
         });
-
-        // Close menu after clicking a link
         mobileMenu.querySelectorAll('a').forEach(link => {
-          link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-          });
+          link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
         });
       }
     </script>
