@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About – MasTECH Innovations</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: '#0a0e1a',
+              deepblue: '#0f1629',
+              accent: '#00e5a0',
+              accentDim: '#00b87a',
+              surface: '#151c32',
+              textMain: '#e2e8f0'
+            },
+            fontFamily: {
+              outfit: ['Outfit', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace']
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="min-h-screen bg-navy text-textMain font-outfit">
+    <nav class="bg-navy/90 border-b border-white/5 backdrop-blur-md">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="font-bold text-xl gradient-text font-mono">MasTECH</a>
+        <div class="hidden md:flex gap-8 text-sm text-gray-400">
+          <a href="about.html" class="text-accent">About</a>
+          <a href="services.html" class="hover:text-accent transition">Services</a>
+          <a href="portfolio.html" class="hover:text-accent transition">Portfolio</a>
+          <a href="contact.html" class="hover:text-accent transition">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 md:py-16">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">About Me</h1>
+      <div class="w-16 h-1 bg-accent rounded mb-8"></div>
+      <p class="text-gray-300 text-lg mb-4">
+        I’m a Computer Hardware Engineer and Web Developer based in Abuja FCT. I help individuals and small businesses fix their tech and build a professional online presence that actually supports their goals.
+      </p>
+      <p class="text-gray-400 mb-4">
+        On the hardware side, I diagnose and repair laptop and desktop issues, handle upgrades (RAM, SSD, battery, keyboard), remove viruses and set up proper backups so your important files stay safe. I focus on honest feedback, realistic pricing and clear communication.
+      </p>
+      <p class="text-gray-400 mb-4">
+        On the web side, I design and build clean, responsive websites using HTML, CSS, JavaScript, WordPress and simple backend tools. My focus is on small businesses that need a site that looks modern, loads fast and makes it easy for customers to contact them via WhatsApp, phone or email.
+      </p>
+      <p class="text-gray-400">
+        Right now I’m rebuilding my portfolio with fresh demo projects, including a real estate layout and a restaurant layout, to show different styles I can deliver for clients in Abuja and beyond.
+      </p>
+    </main>
+  </body>
+</html>
