@@ -27,8 +27,26 @@
         }
       }
     </script>
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #00e5a0, #00b4d8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .glow-border {
+        border: 1px solid rgba(0,229,160,0.2);
+        box-shadow: 0 0 20px rgba(0,229,160,0.05);
+      }
+      .bg-surface {
+        background-color: #151c32;
+      }
+      .bg-deepblue {
+        background-color: #0f1629;
+      }
+    </style>
   </head>
-  <body class="min-h-screen bg-navy text-textMain font-outfit">
+  <body class="min-h-screen bg-deepblue text-textMain font-outfit">
     <nav class="bg-navy/90 border-b border-white/5 backdrop-blur-md">
       <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="index.html" class="font-bold text-xl gradient-text font-mono">MasTECH</a>
@@ -41,13 +59,11 @@
       </div>
     </nav>
 
-<main class="max-w-6xl mx-auto px-6 py-12 md:py-16">
-      <h1 class="text-3xl md:text-4xl font-bold mb-4">Services</h1>
+    <main class="max-w-6xl mx-auto px-6 py-12 md:py-16">
       <p class="text-accent font-mono text-sm mb-3">// Services</p>
       <h1 class="text-3xl md:text-4xl font-bold mb-4">What I can handle for your business.</h1>
-<div class="w-16 h-1 bg-accent rounded mb-8"></div>
+      <div class="w-16 h-1 bg-accent rounded mb-8"></div>
 
-      <div class="grid md:grid-cols-2 gap-8">
       <p class="text-gray-400 text-lg mb-10">
         I combine web design and basic IT support so you don’t have to manage multiple
         people for simple projects. Here’s how I can help you in Abuja and beyond.
@@ -55,10 +71,9 @@
 
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Web Design -->
-<section class="border border-white/10 rounded-2xl p-6 bg-surface">
-<div class="flex items-center gap-3 mb-4">
-<i data-lucide="globe" style="width:24px;height:24px;color:#00e5a0"></i>
-            <h2 class="text-xl font-semibold">Website Design & Development</h2>
+        <section class="glow-border rounded-2xl p-6 bg-surface">
+          <div class="flex items-center gap-3 mb-4">
+            <i data-lucide="globe" style="width:24px;height:24px;color:#00e5a0"></i>
             <h2 class="text-xl font-semibold">Business & Landing Page Websites</h2>
           </div>
           <p class="text-gray-300 text-sm mb-3">
@@ -74,16 +89,11 @@
         </section>
 
         <!-- Web Apps / PHP -->
-        <section class="border border-white/10 rounded-2xl p-6 bg-surface">
+        <section class="glow-border rounded-2xl p-6 bg-surface">
           <div class="flex items-center gap-3 mb-4">
             <i data-lucide="database" style="width:24px;height:24px;color:#00e5a0"></i>
             <h2 class="text-xl font-semibold">Simple Web Apps & PHP/MySQL</h2>
-</div>
-          <ul class="text-gray-300 text-sm space-y-2">
-            <li>Business websites, personal portfolios and landing pages.</li>
-            <li>Mobile‑first, responsive layouts that look good on phone and laptop.</li>
-            <li>WordPress setup, customization and simple e‑commerce integration.</li>
-            <li>Connection to WhatsApp and contact forms to capture leads.</li>
+          </div>
           <p class="text-gray-300 text-sm mb-3">
             Small custom systems like job boards, basic dashboards or internal tools built
             with PHP and MySQL, tailored to your workflow.
@@ -92,21 +102,15 @@
             <li>– User logins and roles</li>
             <li>– Data entry forms and simple reporting</li>
             <li>– Lightweight admin panels for managing content</li>
-</ul>
-</section>
+          </ul>
+        </section>
 
         <!-- IT Support -->
-<section class="border border-white/10 rounded-2xl p-6 bg-surface">
-<div class="flex items-center gap-3 mb-4">
-<i data-lucide="wrench" style="width:24px;height:24px;color:#00e5a0"></i>
-            <h2 class="text-xl font-semibold">Hardware Repair & IT Support</h2>
+        <section class="glow-border rounded-2xl p-6 bg-surface">
+          <div class="flex items-center gap-3 mb-4">
+            <i data-lucide="wrench" style="width:24px;height:24px;color:#00e5a0"></i>
             <h2 class="text-xl font-semibold">Laptop Repair & IT Support</h2>
-</div>
-          <ul class="text-gray-300 text-sm space-y-2">
-            <li>Laptop & desktop fault diagnosis (no power, no display, overheating, slow performance).</li>
-            <li>Hardware upgrades: RAM, SSD, hard drive cloning, battery & keyboard replacement.</li>
-            <li>Virus/malware removal, OS installation and performance tuning.</li>
-            <li>Onsite support within Abuja FCT for homes and small offices.</li>
+          </div>
           <p class="text-gray-300 text-sm mb-3">
             Practical support for your everyday tech: from slow or faulty laptops to basic
             office setups and internet configuration.
@@ -116,9 +120,13 @@
             <li>– RAM, SSD and battery upgrades</li>
             <li>– OS installation, cleanup and virus removal</li>
             <li>– Basic networking and small office / home setups in Abuja</li>
-</ul>
-</section>
-</div>
-</main>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
